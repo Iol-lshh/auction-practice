@@ -1,0 +1,5 @@
+rootProject.name = 'auction'
+include 'auction-api'
+include 'auction-domain'
+include 'auction-infra'
+
