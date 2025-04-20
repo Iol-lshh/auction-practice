@@ -1,5 +1,5 @@
 rootProject.name = 'auction'
-include 'auction-api'
+include 'auction-app'
 include 'auction-domain'
 include 'auction-infra'
 

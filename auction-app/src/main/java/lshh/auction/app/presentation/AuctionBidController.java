@@ -1,7 +1,7 @@
-package lshh.auction.api.presentation;
+package lshh.auction.app.presentation;
 
 import lombok.RequiredArgsConstructor;
-import lshh.auction.api.service.AuctionBidUsecase;
+import lshh.auction.app.service.AuctionBidUsecase;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

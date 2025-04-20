@@ -1,13 +1,12 @@
-package lshh.auction.api.service;
+package lshh.auction.app.service;
 
 import lombok.RequiredArgsConstructor;
-import lshh.auction.api.dto.request.AuctionItemRegisterRequest;
-import lshh.auction.api.dto.response.AuctionResponse;
+import lshh.auction.app.dto.request.AuctionItemRegisterRequest;
+import lshh.auction.app.dto.response.AuctionResponse;
 import lshh.auction.domain.command.AuctionItemRegisterCommand;
 import lshh.auction.domain.entity.Auction;
 import lshh.auction.domain.service.AuctionFactory;
 import lshh.auction.domain.service.AuctionRepository;
-import lshh.auction.domain.service.AuctionSpecification;
 import lshh.auction.infra.projection.AuctionProjection;
 import lshh.auction.infra.service.AuctionQuery;
 import org.springframework.stereotype.Service;

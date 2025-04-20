@@ -1,9 +1,9 @@
-package lshh.auction.api.service;
+package lshh.auction.app.service;
 
 import lombok.extern.slf4j.Slf4j;
-import lshh.auction.api.dto.request.AuctionBidRequest;
-import lshh.auction.api.dto.request.AuctionItemRegisterRequest;
-import lshh.auction.api.dto.response.AuctionResponse;
+import lshh.auction.app.dto.request.AuctionBidRequest;
+import lshh.auction.app.dto.request.AuctionItemRegisterRequest;
+import lshh.auction.app.dto.response.AuctionResponse;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

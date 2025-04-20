@@ -1,4 +1,4 @@
-package lshh.auction.api.dto.request;
+package lshh.auction.app.dto.request;
 
 import lombok.Data;
 

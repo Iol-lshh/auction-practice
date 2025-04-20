@@ -1,20 +1,18 @@
-package lshh.auction.api.service;
+package lshh.auction.app.service;
 
 import lombok.RequiredArgsConstructor;
-import lshh.auction.api.dto.request.AuctionBidRequest;
-import lshh.auction.api.dto.response.AuctionResponse;
+import lshh.auction.app.dto.request.AuctionBidRequest;
+import lshh.auction.app.dto.response.AuctionResponse;
 import lshh.auction.domain.command.AuctionBidCommand;
 import lshh.auction.domain.entity.Auction;
 import lshh.auction.domain.service.AuctionRepository;
 import lshh.auction.domain.service.AuctionSpecification;
-import lshh.auction.infra.service.AuctionQuery;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @RequiredArgsConstructor
 @Service
 public class AuctionBidUsecase {
-    private final AuctionQuery auctionQuery;
     private final AuctionRepository auctionRepository;
     private final AuctionSpecification auctionSpecification;
 

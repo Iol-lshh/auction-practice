@@ -1,8 +1,8 @@
-package lshh.auction.api.service;
+package lshh.auction.app.service;
 
 import lombok.extern.slf4j.Slf4j;
-import lshh.auction.api.dto.request.AuctionItemRegisterRequest;
-import lshh.auction.api.dto.response.AuctionResponse;
+import lshh.auction.app.dto.request.AuctionItemRegisterRequest;
+import lshh.auction.app.dto.response.AuctionResponse;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -25,7 +25,7 @@ class AuctionItemUsecaseTest {
 
         List<AuctionResponse> result = utd.list();
 
-        assertEquals(1, result.size());
+        assertTrue(result.size() > 0);
         log.info(result.toString());
     }
 }

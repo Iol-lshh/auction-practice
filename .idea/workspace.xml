@@ -5,8 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc8fc6e8-e1de-4ce8-a2e0-576f58573729" name="변경" comment="init auction practice 프로젝트 기초 포멧 생성">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/auction-app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-api/src/main/java/lshh/AuctionApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-app/src/main/java/lshh/AuctionApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-api/src/main/java/lshh/auction/api/dto/request/AuctionBidRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-app/src/main/java/lshh/auction/app/dto/request/AuctionBidRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-api/src/main/java/lshh/auction/api/dto/request/AuctionItemRegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-app/src/main/java/lshh/auction/app/dto/request/AuctionItemRegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-api/src/main/java/lshh/auction/api/dto/response/AuctionResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-app/src/main/java/lshh/auction/app/dto/response/AuctionResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-api/src/main/java/lshh/auction/api/presentation/AuctionBidController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-app/src/main/java/lshh/auction/app/presentation/AuctionBidController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-api/src/main/java/lshh/auction/api/presentation/AuctionItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-app/src/main/java/lshh/auction/app/presentation/AuctionItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-api/src/main/java/lshh/auction/api/service/AuctionBidUsecase.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-app/src/main/java/lshh/auction/app/service/AuctionBidUsecase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-api/src/main/java/lshh/auction/api/service/AuctionItemUsecase.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-app/src/main/java/lshh/auction/app/service/AuctionItemUsecase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-api/src/test/java/lshh/AuctionApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-app/src/test/java/lshh/AuctionApplicationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-api/src/test/java/lshh/auction/api/service/AuctionBidUsecaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-app/src/test/java/lshh/auction/app/service/AuctionBidUsecaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-api/src/test/java/lshh/auction/api/service/AuctionItemUsecaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-app/src/test/java/lshh/auction/app/service/AuctionItemUsecaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,8 +81,12 @@
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
   </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="보안 분석" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -84,6 +101,7 @@
   "keyToString": {
     "Gradle.AuctionApplicationTest.contextLoads (1).executor": "Run",
     "Gradle.AuctionApplicationTest.contextLoads.executor": "Run",
+    "Gradle.AuctionBidUsecaseTest (1).executor": "Run",
     "Gradle.AuctionBidUsecaseTest.executor": "Run",
     "Gradle.AuctionBidUsecaseTest.경매_오픈.executor": "Run",
     "Gradle.AuctionBidUsecaseTest.경매_종료_유찰.executor": "Run",
@@ -119,7 +137,31 @@
       <recent name="lshh" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AuctionBidUsecaseTest">
+  <component name="RunManager" selected="Gradle.auction [check]">
+    <configuration name="AuctionBidUsecaseTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":auction-application:test" />
+            <option value="--tests" />
+            <option value="&quot;lshh.auction.application.service.AuctionBidUsecaseTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="AuctionBidUsecaseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -144,54 +186,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="AuctionBidUsecaseTest.경매_오픈" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":auction-api:test" />
-            <option value="--tests" />
-            <option value="&quot;lshh.auction.api.service.AuctionBidUsecaseTest.경매_오픈&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="AuctionBidUsecaseTest.경매_종료_유찰" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":auction-api:test" />
-            <option value="--tests" />
-            <option value="&quot;lshh.auction.api.service.AuctionBidUsecaseTest.경매_종료_유찰&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="AuctionItemUsecaseTest.넣고_리스트_확인" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -203,9 +197,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":auction-api:test" />
+            <option value=":auction-app:test" />
             <option value="--tests" />
-            <option value="&quot;lshh.auction.api.service.AuctionItemUsecaseTest.넣고_리스트_확인&quot;" />
+            <option value="&quot;lshh.auction.app.service.AuctionItemUsecaseTest.넣고_리스트_확인&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -216,28 +210,48 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="AuctionItemUsecaseTest.listReturnsEmptyListWhenNoAuctionsExist" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="auction [check]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":auction-api:test" />
-            <option value="--tests" />
-            <option value="&quot;lshh.auction.api.service.AuctionItemUsecaseTest.listReturnsEmptyListWhenNoAuctionsExist&quot;" />
+            <option value="check" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="auction [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
@@ -252,7 +266,7 @@
       <method v="2" />
     </configuration>
     <configuration name="AuctionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="auction.auction-api.main" />
+      <module name="auction.auction-app.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="lshh.AuctionApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -260,19 +274,19 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AuctionBidUsecaseTest" />
-        <item itemvalue="Gradle.AuctionBidUsecaseTest.경매_종료_유찰" />
-        <item itemvalue="Gradle.AuctionBidUsecaseTest.경매_오픈" />
+        <item itemvalue="Gradle.auction [check]" />
         <item itemvalue="Gradle.AuctionItemUsecaseTest.넣고_리스트_확인" />
-        <item itemvalue="Gradle.AuctionItemUsecaseTest.listReturnsEmptyListWhenNoAuctionsExist" />
+        <item itemvalue="Gradle.auction [test]" />
+        <item itemvalue="Gradle.AuctionBidUsecaseTest (1)" />
+        <item itemvalue="Gradle.AuctionBidUsecaseTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
-        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
       </set>
     </attachedChunks>
   </component>

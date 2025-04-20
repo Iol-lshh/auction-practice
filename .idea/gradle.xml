@@ -8,7 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/auction-api" />
+            <option value="$PROJECT_DIR$/auction-app" />
             <option value="$PROJECT_DIR$/auction-domain" />
             <option value="$PROJECT_DIR$/auction-infra" />
           </set>
