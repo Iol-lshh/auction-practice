@@ -13,7 +13,7 @@
 ```
 [APP]       → Usecase (App Service)
 [Domain]    → Domain Entity + Domain Service
-[Infra]     → Gateway / Repository Impl / Query (Infra Service) + JPA Repository / MyBatis / Message Queue / File System
+[Infra]     → DataGateway(Repository Impliments) / Query (Infra Service) + JPA Repository / MyBatis / Message Queue / File System
 ```
 
 ## 애플리케이션 관점
