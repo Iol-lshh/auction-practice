@@ -17,11 +17,11 @@ auction-practice/
 │   ├── dto
 │   │   ├── request
 │   │   └── response
-│   └── service           # usecase - 애플리케이션 기능 로직
+│   └── service           # 애플리케이션으로써 기능 로직 (actor의 usecase, 요구사항)
 ├── auction-domain/    # 도메인 계층
 │   ├── command
 │   ├── entity
-│   └── service           # domain - 비즈니스 로직
+│   └── service           # domain이 제공해야할 비즈니스 로직
 ├── auction-infra/     # 인프라 계층
 │   ├── jpa
 │   ├── projection
