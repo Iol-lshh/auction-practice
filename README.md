@@ -14,6 +14,22 @@
 [APP]       → Usecase (App Service)
 [Domain]    → Domain Entity + Domain Service
 [Infra]     → DataGateway(Repository Impliments) / Query (Infra Service) + JPA Repository / MyBatis / Message Queue / File System
+
+auction-practice/
+├── auction-app/       # 애플리케이션 계층
+│   ├── api
+│   ├── dto
+│   │   ├── request
+│   │   └── response
+│   └── service           # usecase - 애플리케이션 기능 로직
+├── auction-domain/    # 도메인 계층
+│   ├── command
+│   ├── entity
+│   └── service           # domain - 비즈니스 로직
+├── auction-infra/     # 인프라 계층
+│   ├── jpa
+│   ├── projection
+│   └── service           # 공유 의존성과의 동작 구현 로직
 ```
 
 ## 애플리케이션 관점
