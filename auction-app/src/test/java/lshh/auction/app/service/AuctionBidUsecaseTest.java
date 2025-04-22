@@ -52,7 +52,6 @@ class AuctionBidUsecaseTest {
 
     @Nested
     class 경매_종료{
-
         @Test
         void 경매_종료_유찰() {
             AuctionItemRegisterRequest request = new AuctionItemRegisterRequest("1", "item1", 0L);

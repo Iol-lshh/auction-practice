@@ -1,4 +1,4 @@
-package lshh.auction.app.presentation;
+package lshh.auction.app.api;
 
 import lombok.RequiredArgsConstructor;
 import lshh.auction.app.dto.request.AuctionItemRegisterRequest;
