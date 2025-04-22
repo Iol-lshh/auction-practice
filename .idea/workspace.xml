@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc8fc6e8-e1de-4ce8-a2e0-576f58573729" name="변경" comment="init auction practice 프로젝트 기초 포멧 생성">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auction-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/auction-app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auction-api/src/main/java/lshh/AuctionApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-app/src/main/java/lshh/AuctionApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auction-api/src/main/java/lshh/auction/api/dto/request/AuctionBidRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-app/src/main/java/lshh/auction/app/dto/request/AuctionBidRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auction-api/src/main/java/lshh/auction/api/dto/request/AuctionItemRegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-app/src/main/java/lshh/auction/app/dto/request/AuctionItemRegisterRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auction-api/src/main/java/lshh/auction/api/dto/response/AuctionResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-app/src/main/java/lshh/auction/app/dto/response/AuctionResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auction-api/src/main/java/lshh/auction/api/presentation/AuctionBidController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-app/src/main/java/lshh/auction/app/presentation/AuctionBidController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auction-api/src/main/java/lshh/auction/api/presentation/AuctionItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-app/src/main/java/lshh/auction/app/presentation/AuctionItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auction-api/src/main/java/lshh/auction/api/service/AuctionBidUsecase.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-app/src/main/java/lshh/auction/app/service/AuctionBidUsecase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auction-api/src/main/java/lshh/auction/api/service/AuctionItemUsecase.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-app/src/main/java/lshh/auction/app/service/AuctionItemUsecase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auction-api/src/test/java/lshh/AuctionApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-app/src/test/java/lshh/AuctionApplicationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auction-api/src/test/java/lshh/auction/api/service/AuctionBidUsecaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-app/src/test/java/lshh/auction/app/service/AuctionBidUsecaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auction-api/src/test/java/lshh/auction/api/service/AuctionItemUsecaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-app/src/test/java/lshh/auction/app/service/AuctionItemUsecaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,10 +67,10 @@
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -97,37 +83,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.AuctionApplicationTest.contextLoads (1).executor": "Run",
-    "Gradle.AuctionApplicationTest.contextLoads.executor": "Run",
-    "Gradle.AuctionBidUsecaseTest (1).executor": "Run",
-    "Gradle.AuctionBidUsecaseTest.executor": "Run",
-    "Gradle.AuctionBidUsecaseTest.경매_오픈.executor": "Run",
-    "Gradle.AuctionBidUsecaseTest.경매_종료_유찰.executor": "Run",
-    "Gradle.AuctionItemUsecaseTest.listReturnsEmptyListWhenNoAuctionsExist.executor": "Run",
-    "Gradle.AuctionItemUsecaseTest.넣고_리스트_확인.executor": "Run",
-    "Gradle.auction [check].executor": "Run",
-    "Gradle.auction [test].executor": "Run",
-    "Gradle.auction:bid-api [test].executor": "Run",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "k6.free24.notification.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "모듈",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.AuctionApplicationTest.contextLoads (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AuctionApplicationTest.contextLoads.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AuctionBidUsecaseTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AuctionBidUsecaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AuctionBidUsecaseTest.경매_오픈.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AuctionBidUsecaseTest.경매_종료_유찰.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AuctionItemUsecaseTest.listReturnsEmptyListWhenNoAuctionsExist.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AuctionItemUsecaseTest.넣고_리스트_확인.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.auction [check].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.auction [test].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.auction:bid-api [test].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;k6.free24.notification.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
