@@ -14,13 +14,10 @@
 auction-practice/
 ├── auction-app/       # 애플리케이션 계층
 │   ├── api
-│   ├── dto
-│   │   ├── request
-│   │   └── response
 │   └── service           # 애플리케이션으로써 기능 로직 (actor의 usecase, 요구사항)
 ├── auction-domain/    # 도메인 계층
 │   ├── command
-│   ├── entity
+│   ├── model
 │   └── service           # domain이 제공해야할 비즈니스 로직
 ├── auction-infra/     # 인프라 계층
 │   ├── jpa

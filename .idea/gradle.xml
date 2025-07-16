@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$/auction-app" />
             <option value="$PROJECT_DIR$/auction-domain" />
             <option value="$PROJECT_DIR$/auction-infra" />
+            <option value="$PROJECT_DIR$/common" />
           </set>
         </option>
       </GradleProjectSettings>
