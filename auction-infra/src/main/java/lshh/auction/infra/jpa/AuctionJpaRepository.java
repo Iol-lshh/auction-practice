@@ -1,6 +1,6 @@
 package lshh.auction.infra.jpa;
 
-import lshh.auction.domain.entity.Auction;
+import lshh.auction.domain.model.Auction;
 import lshh.auction.infra.projection.AuctionProjection;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

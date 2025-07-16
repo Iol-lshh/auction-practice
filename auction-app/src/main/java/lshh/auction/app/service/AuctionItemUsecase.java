@@ -1,10 +1,8 @@
 package lshh.auction.app.service;
 
 import lombok.RequiredArgsConstructor;
-import lshh.auction.app.dto.request.AuctionItemRegisterRequest;
-import lshh.auction.app.dto.response.AuctionResponse;
-import lshh.auction.domain.command.AuctionItemRegisterCommand;
-import lshh.auction.domain.entity.Auction;
+import lshh.auction.domain.command.AuctionCommand;
+import lshh.auction.domain.model.Auction;
 import lshh.auction.domain.service.AuctionFactory;
 import lshh.auction.domain.service.AuctionRepository;
 import lshh.auction.infra.projection.AuctionProjection;
@@ -22,16 +20,15 @@ public class AuctionItemUsecase {
     private final AuctionFactory auctionFactory;
 
     @Transactional(readOnly = true)
-    public List<AuctionResponse> list() {
+    public List<AuctionInfo> list() {
         List<AuctionProjection> auctionProjections = auctionQuery.getList();
-        return AuctionResponse.from(auctionProjections);
+        return AuctionInfo.from(auctionProjections);
     }
 
     @Transactional
-    public AuctionResponse register(AuctionItemRegisterRequest request) {
-        AuctionItemRegisterCommand command = new AuctionItemRegisterCommand(request.getId(), request.getName(), request.getMinimumPrice());
+    public AuctionInfo register(AuctionCommand.RegisterItem command) {
         Auction auction = auctionFactory.generateByItem(command);
         auctionRepository.save(auction);
-        return AuctionResponse.from(auction);
+        return AuctionInfo.from(auction);
     }
 }

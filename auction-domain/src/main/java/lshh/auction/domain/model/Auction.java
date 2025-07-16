@@ -1,9 +1,8 @@
-package lshh.auction.domain.entity;
+package lshh.auction.domain.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;
-import lshh.auction.domain.command.AuctionBidCommand;
-import lshh.auction.domain.command.AuctionItemRegisterCommand;
+import lshh.auction.domain.command.AuctionCommand;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,10 +33,10 @@ public class Auction {
         return auction;
     }
 
-    public void update(AuctionItemRegisterCommand command) {
+    public void update(AuctionCommand.RegisterItem command) {
         this.auctionItem = AuctionItem.from(command);
         this.status = AuctionStatus.READY;
-        this.price = Money.from(command.getMinimumPrice());
+        this.price = command.minimumPrice();
     }
 
     public AuctionItem getItem() {
@@ -45,6 +44,9 @@ public class Auction {
     }
 
     public void open() {
+        if(!isReady()) {
+            throw new IllegalStateException("Auction is not ready to open");
+        }
         status = AuctionStatus.OPEN;
     }
 
@@ -69,12 +71,12 @@ public class Auction {
                 && amount.isBiggerThan(price);
     }
 
-    public void bid(AuctionBidCommand command) {
-        if (!canBidding(command.getAmount())) {
-            throw new IllegalStateException("Cannot bid");
+    public void bid(AuctionCommand.Bid command) {
+        if (!canBidding(command.amount())) {
+            throw new IllegalArgumentException("Cannot bid");
         }
-        this.price = command.getAmount();
-        AuctionBid auctionBid = AuctionBid.from(this, command.getUserId());
+        this.price = command.amount();
+        AuctionBid auctionBid = AuctionBid.from(this, command.userId());
         this.bids.add(auctionBid);
     }
 }

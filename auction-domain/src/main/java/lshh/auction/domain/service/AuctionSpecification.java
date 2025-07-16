@@ -1,8 +1,8 @@
 package lshh.auction.domain.service;
 
 import lombok.RequiredArgsConstructor;
-import lshh.auction.domain.entity.Auction;
-import lshh.auction.domain.entity.Money;
+import lshh.auction.domain.command.AuctionCommand;
+import lshh.auction.domain.model.Auction;
 import org.springframework.stereotype.Component;
 
 @RequiredArgsConstructor
@@ -14,7 +14,7 @@ public class AuctionSpecification {
     public Auction prepareForOpen(String auctionId) {
         Auction auction = auctionRepository.findById(auctionId).orElseThrow();
         if (!auction.isReady()){
-            throw new IllegalStateException("Auction cannot be opened");
+            throw new IllegalArgumentException("Auction cannot be opened");
         }
         return auction;
     }
@@ -22,16 +22,12 @@ public class AuctionSpecification {
     public Auction prepareForClose(String auctionId) {
         Auction auction = auctionRepository.findById(auctionId).orElseThrow();
         if (!auction.isOpen()){
-            throw new IllegalStateException("Auction cannot be closed");
+            throw new IllegalArgumentException("Auction cannot be closed");
         }
         return auction;
     }
 
-    public Auction prepareForBid(String auctionId, Money amount) {
-        Auction auction = auctionRepository.findById(auctionId).orElseThrow();
-        if (!auction.canBidding(amount)){
-            throw new IllegalStateException("Auction is not open for bidding");
-        }
-        return auction;
+    public Auction prepareForBid(AuctionCommand.Bid command) {
+        return auctionRepository.findById(command.auctionId()).orElseThrow();
     }
 }

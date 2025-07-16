@@ -1,8 +1,8 @@
 package lshh.auction.infra.projection;
 
 import lombok.Data;
-import lshh.auction.domain.entity.AuctionStatus;
-import lshh.auction.domain.entity.Money;
+import lshh.auction.domain.model.AuctionStatus;
+import lshh.auction.domain.model.Money;
 
 @Data
 public class AuctionProjection {

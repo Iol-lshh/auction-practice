@@ -1,6 +1,6 @@
 package lshh.auction.domain.service;
 
-import lshh.auction.domain.entity.Auction;
+import lshh.auction.domain.model.Auction;
 
 import java.util.Optional;
 

@@ -1,4 +1,4 @@
-package lshh.auction.domain.entity;
+package lshh.auction.domain.model;
 
 import jakarta.persistence.*;
 

@@ -1,7 +1,7 @@
 package lshh.auction.infra.service;
 
 import lombok.RequiredArgsConstructor;
-import lshh.auction.domain.entity.Auction;
+import lshh.auction.domain.model.Auction;
 import lshh.auction.domain.service.AuctionRepository;
 import lshh.auction.infra.jpa.AuctionJpaRepository;
 import lshh.auction.infra.projection.AuctionProjection;

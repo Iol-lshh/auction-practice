@@ -1,7 +1,7 @@
 package lshh.auction.domain.service;
 
-import lshh.auction.domain.command.AuctionItemRegisterCommand;
-import lshh.auction.domain.entity.Auction;
+import lshh.auction.domain.command.AuctionCommand;
+import lshh.auction.domain.model.Auction;
 import org.springframework.stereotype.Component;
 
 import java.time.Instant;
@@ -25,7 +25,7 @@ public class AuctionFactory {
         return new UUID(mostSigBits, leastSigBits).toString();
     }
 
-    public Auction generateByItem(AuctionItemRegisterCommand command) {
+    public Auction generateByItem(AuctionCommand.RegisterItem command) {
         Auction auction = generate();
         auction.update(command);
         return auction;
