@@ -14,9 +14,6 @@ public class AuctionItem {
     private String name;
 
     public static AuctionItem from(AuctionCommand.RegisterItem command) {
-        if (command.minimumPrice() == null) {
-            throw new IllegalArgumentException("Minimum price must be greater than zero");
-        }
         if (command.itemId() == null || command.itemId().isBlank()) {
             throw new IllegalArgumentException("Item ID must not be null or blank");
         }

@@ -36,6 +36,9 @@ public class Auction {
     public void update(AuctionCommand.RegisterItem command) {
         this.auctionItem = AuctionItem.from(command);
         this.status = AuctionStatus.READY;
+        if (command.minimumPrice() == null) {
+            throw new IllegalArgumentException("Minimum price must be greater than zero");
+        }
         this.price = command.minimumPrice();
     }
 
